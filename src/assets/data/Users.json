@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "demo" ,
+        "email": "demo@gmail.com",
+        "password": "demo@123",
+        "status": 1
+    },
+    
+    {
+        "id": 2,
+        "name": "demo" ,
+        "email": "ram@gmail.com",
+        "password": "demo@123",
+        "status": 1
+    },
+    
+    {
+        "id": 3,
+        "name": "demo" ,
+        "email": "kiyansh@gmail.com",
+        "password": "demo@123",
+        "status": 1
+    },
+    {
+        "id": 4,
+        "name": "demo" ,
+        "email": "kiyansh@gmail.com",
+        "password": "demo@123",
+        "status": 1
+    },
+    {
+        "id":5 ,
+        "name": "demo" ,
+        "email": "kiyansh@gmail.com",
+        "password": "demo@123",
+        "status": 1
+    },
+    {
+        "id": 6,
+        "name": "demo" ,
+        "email": "kiyansh@gmail.com",
+        "password": "demo@123",
+        "status": 1
+    }
+]
+

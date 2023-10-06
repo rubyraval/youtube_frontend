@@ -1,0 +1,76 @@
+.search{
+    width: 500px;
+    height: 40px;
+    padding: 3px;
+    
+    
+}
+.btn{
+    border: 2px solid black;
+    padding:10 px;
+}
+.btn2{
+    border: none;
+    border-radius: 20px;
+padding: 2px;
+height: 30px;
+width: 35px;
+}
+
+.sidebar{
+    height: 800px;
+    width: 70px;
+    background-color:light;
+}
+.home{
+    padding: 2 px;
+    height: 70px;
+    width: 70px;
+    border: 1px solid rgb(241, 240, 240);
+    border-radius: 10px;
+    display: flex;
+    
+}
+.home:hover{
+    background-color:beige ;
+}
+.font{
+    max-width: 6rem;
+    display: block;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.btn:hover a{
+    background-color:gainsboro;
+}
+img{
+    border-radius: 20px;
+    padding-left: 0px;
+    padding-top: 6px;
+}
+.signin{
+    height: 800px;
+    padding-top: 50px;
+    padding-left:300px ;
+    width: 800px ;
+    background-color:lavender;
+    border: 2 solid rgb(42, 39, 39);
+    
+}
+.textbox{
+    width: 300px;
+    height: 55px;
+    border:1px solid gainsboro;
+    }
+    .createAccount{
+        width: 300px;
+        height: 300px;
+        
+        padding-top: 30px;
+        padding-left: 70px;
+    }
+  
