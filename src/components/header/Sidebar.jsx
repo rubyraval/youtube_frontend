@@ -2,9 +2,9 @@ const Sidebar = () =>{
     return(
         <>
         
-        <div className="sidebar">
+        <div className="sidebar position-fixed">
     
-<div className="home d-flex justify-content-center ">
+<div className="home d-flex justify-content-center  ">
     <div>
 <i className="bi bi-house-door-fill  p-2 d-flex justify-content-center align-self-center">
 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-house-door-fill d-flex " viewBox="0 0 16 16">

@@ -1,5 +1,5 @@
-import Navbar from "../Navbar";
-import Sidebar from "../sidebar";
+import Navbar from "../components/header/Navbar";
+import Sidebar from "../components/header/sidebar";
 
 
 

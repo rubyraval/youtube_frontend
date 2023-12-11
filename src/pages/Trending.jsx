@@ -1,7 +1,7 @@
-import Navbar from "../Navbar";
-import Sidebar from "../sidebar";
-import NowData from '../../../assets/data/Videocard.json';
-import Now from "../../UI/Now";
+import Navbar from "../components/header/Navbar";
+import Sidebar from "../components/header/sidebar";
+import NowData from '../assets/data/Videocard.json';
+import Now from "../components/UI/Now";
 import { useEffect, useState } from "react";
 
 
@@ -75,7 +75,7 @@ const Trending = () => {
 <div className=" mt-3 mx-0 ">
   <div col-4>
   {Videos && Videos.map(item => {
-
+   
 return (
 <div className='col-12'>
 <Now Now={item}/>

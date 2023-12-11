@@ -1,9 +1,8 @@
-import Navbar from "../Navbar";
-import Sidebar from "../sidebar";
-import NavTags from "../../body/NavTags";
-import Videocard from "./videocard";
+import Navbar from "../components/header/Navbar";
+import Sidebar from "../components/header/sidebar";
+import NavTags from "../components/header/../body/NavTags";
+import Video from "../components/UI/Video";
 import axios from 'axios';
-
 import { useEffect ,useState } from 'react';
 
 const Home = () =>{
@@ -11,18 +10,18 @@ const Home = () =>{
   
 // Tags
 useEffect(()=>{
-  // uploadVideo();
+  //  uploadVideo();
    getVideo();
 },[])
 
 
-// const uploadTags = async() =>{
-//   const res = await axios.post('http://127.0.0.1:5000/uploadTags',
-//   {
-// "name": "Music"
-//   });
-//   console.log(res.data)
-// }
+const uploadTags = async() =>{
+  const res = await axios.post('http://127.0.0.1:5000/uploadTags',
+  {
+"name": "Music"
+  });
+  console.log(res.data)
+}
 
 
 
@@ -61,6 +60,7 @@ console.log(res.data)
     <Sidebar/></div>
     <div className="col-11 p-1">
     <NavTags/>
+    
       <div>
         
 
@@ -68,9 +68,9 @@ console.log(res.data)
           {Videos && Videos.map(item => {
 
             return (
-
-              <Videocard data={item}/>
-              
+<div className="col-4">
+              <Video video={item}/>
+              </div>
             )
           })}
 

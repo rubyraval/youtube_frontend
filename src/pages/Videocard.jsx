@@ -5,12 +5,13 @@ const Videocard = (props) =>{
 
 <div className="col-4 text-body-dark">
     <a href={"/FullVideo/"+props.data.id} className=" text-black text-decoration-none">
- <img src={props.data.thumbnail} height={250} width={350} className="p-4  rounded-5"/>
-<div className="d-flex">
-<div><img src={props.data.icon} width={40} height={40}/>
-</div>
+ <img src={props.data.thumbnail} height={300} width={350} className="p-3  rounded-5"/>
+<div >
+<div><img src={props.data.icon} width={40} height={40} className="p-2"/>{props.data.title}</div>
+<div> 
+ <iframe src={props.data.Video_url}></iframe>  
+ </div>
 
-<div>{props.data.title}</div>
 <span>{props.data.duration}</span>
 
 

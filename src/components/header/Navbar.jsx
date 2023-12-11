@@ -8,7 +8,7 @@ const Navbar  = () =>{
     if(localStorage.getItem('token')){
       getUser();
     }
-  })
+  },[])
 
   const getUser = async() =>{
     axios.defaults.headers.common['Authorization'] = localStorage.getItem('token');
@@ -98,6 +98,7 @@ const Navbar  = () =>{
   </yt-icon-shape>
 </yt-icon>
 <div className="search">
+
   <form>
   <div className="d-flex ">
     <input type="text" className="search rounded-start-pill ps-4  border border-secondary" placeholder="search Here" />
@@ -139,6 +140,7 @@ const Navbar  = () =>{
   >
     <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z" />
   </svg>
+  <a href="/Membershippage" className="btn btn-danger border-0 rounded-pill">YouTube Premium</a>
   {!user._id && <a href="/Signin" className="btn1 rounded-pill  btn-outline-dark btn-sm"  role="button" aria-disabled="true">
   Signin
 </a> }
@@ -150,17 +152,22 @@ const Navbar  = () =>{
    data-bs-toggle="dropdown"
    aria-expanded="false"
  >
-   {user.id}
+   {user.name}
  </button>
  <ul className="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+ <li>
+     <a className="dropdown-item active" href="/Studiopage">
+       Studiopage
+     </a>
+   </li>
    <li>
      <a className="dropdown-item active" href="#">
        Videos
      </a>
    </li>
    <li>
-     <a className="dropdown-item" href="#">
-       Subscribers
+     <a className="dropdown-item" href="/studio">
+       Studio
      </a>
    </li>
    <li>

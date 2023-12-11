@@ -48,18 +48,18 @@ const VerifySignin = () =>{
     return (
         <>
         
-        <div className="container">
+        <div className="container p-3 mb-5">
             
 
 <main className="form-signin  m-auto ">
 
   {success && <div className="alert alert-success"> {success}</div>}
   {error && <div className="alert alert-danger"> {error}</div>}
-<form className="signin  form-control-lg  " onSubmit={handleSubmit}>
+<form className="signin   inputBox col-auto mx-auto  p-2  " onSubmit={handleSubmit}>
     <center>
         <a href="/">
     <img
-      className="mb-4"
+      className="mb-4 p-2 mt-3 mx-auto"
       src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
       alt=""
       width={200}
@@ -68,7 +68,7 @@ const VerifySignin = () =>{
 
 </a>
     
-    <h1 className="h3 mb-3 fw-bold fst-italic">Verify OTP </h1>
+    <h1 className="h4 mb-3 fw-bold ">Verify OTP </h1>
     
     <div className="form-floating w-50 mt-2">
       <input
@@ -86,7 +86,7 @@ const VerifySignin = () =>{
     <button className="btn btn-danger w-50 py-2 mt-3" type="submit">
       Verify OTP
     </button>
-    <p className=" mb-3 text-body-secondary">©2017–2023</p>
+    <p className=" mb-3 text-body-secondary p-2">©2017–2023</p>
     </center>
   </form>
 </main>

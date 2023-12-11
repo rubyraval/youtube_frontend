@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AlertMsg from "../ui/AlertMsg";
 import CopyRight from "../ui/CopyRight";
-import Title from "../ui/Title";
+// import Title from "../ui/Title";
 
 
 
@@ -23,13 +23,13 @@ const Auth = (props) =>{
       className="mb-4"
       src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
       alt=""
-      width={100}
+      width={200}
       
     />
                         </a>
-                        <AlertMsg data={props.data}/>
+                        {/* <AlertMsg data={props.data}/> */}
                         <main className="card border-0 shadow-sm py-2 w-100">
-                        <Title title={props.title}/>
+                        
                     
 
                             {props.children}

@@ -1,17 +1,24 @@
 
-import Home from './components/header/pages/Home';
+import Home from './pages/Home';
 import{BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Signin from './components/header/pages/Signin';
-import Forgot from './components/header/pages/Forgot';
-import CreateAccount from './components/header/pages/CreateAccount';
-import FullVideo from './components/header/pages/FullVideo';
-import Allitems from './components/header/pages/Allitems';
-import Trending from './components/header/pages/Trending';
-import ChannelPage from './components/header/pages/ChannelPage';
-import Shorts from './components/header/pages/Shorts';
-import VerifyRegister from './components/header/pages/VerifyRegister';
-import VerifySignin from './components/header/pages/VerifySignin';
-
+import Signin from './pages/Signin';
+ import Forgot from './pages/Forgot';
+import CreateAccount from './pages/CreateAccount';
+import FullVideo from './pages/FullVideo';
+import Allitems from './pages/Allitems';
+import Trending from './pages/Trending';
+import ChannelPage from './pages/ChannelPage';
+import Shorts from './pages/Shorts';
+import VerifyRegister from './pages/VerifyRegister';
+import VerifySignin from './pages/VerifySignin';
+import Studio from './pages/Studio';
+import Studiopage from './pages/Studiopage';
+import Channels from './pages/Channels';
+import Editvideo from './pages/Editvideo';
+import Reset from './pages/Reset';
+import Membership from './pages/Membership';
+import Membershippage from './pages/Membershippage';
+import "../public/assets/style.css";
 function App() {
 return (
     <>
@@ -22,13 +29,21 @@ return (
         <Route path='/Trending' element={<Trending/>}/>
         <Route path='/Signin' element={<Signin/>}/>
         <Route path='/FullVideo/:id' element={<FullVideo/>}/>
-        <Route path='/Forgot' element={<Forgot/>}/>
+         <Route path='/Forgot' element={<Forgot/>}/>
         <Route path='/CreateAccount' element={<CreateAccount/>}/>
         <Route path='/verifyRegister' element={<VerifyRegister/>}/>
         <Route path='/verifySignin' element={<VerifySignin/>}/>
         <Route path='/Allitems' element={<Allitems/>}/>
-      <Route path='/c/:channel' element={<ChannelPage/>}/>
-      <Route path='/Shorts' elements={<Shorts/>}/>
+        <Route path='/Studio' element={<Studio/>}/>
+        <Route path='/Channels' element={<Channels/>}/>
+      <Route path='/:channel' element={<ChannelPage/>}/>
+      <Route path='/Shorts' element={<Shorts/>}/>
+      <Route path="/Studiopage" element={<Studiopage/>}/>
+      <Route path='/Editvideo/:id' element={<Editvideo/>}/>
+      <Route path='/Reset/:token' element={<Reset/>}/> 
+      <Route path='/Membership' element={<Membership/>}/> 
+      <Route path='/Membershippage' element={<Membershippage/>}/>
+      {/* <Route path="/Content" element={<Content/>}/>  */}
       </Routes>
       </Router>
       

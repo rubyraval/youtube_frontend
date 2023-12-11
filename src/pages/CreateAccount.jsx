@@ -1,7 +1,7 @@
  import { useState } from "react";
  import axios from 'axios';
 
-import Auth from "../../../layouts/auth";
+import Auth from "../layouts/auth";
 
 const CreateAccount = () =>{
      const [name, SetName] = useState('');
